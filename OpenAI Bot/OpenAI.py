@@ -22,7 +22,7 @@ def chat():
             messages=messages 
         )        
         reply = response.choices[0].message.content
-        print("Japu de sali:", reply)
+        print("ChatGPT:", reply)
         messages.append({"role": "assistant", "content": reply})
 
 chat()
